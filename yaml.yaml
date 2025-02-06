@@ -1,0 +1,27 @@
+server:
+  host: "0.0.0.0"
+  port: 8080
+  ssl: true
+
+routes:
+  - path: "/"
+    method: "GET"
+    handler: "homeHandler"
+  - path: "/login"
+    method: "POST"
+    handler: "loginHandler"
+  - path: "/logout"
+    method: "POST"
+    handler: "logoutHandler"
+
+database:
+  type: "postgres"
+  host: "db.example.com"
+  port: 5432
+  user: "admin"
+  password: "supersecurepassword"
+  name: "webapp_db"
+
+logging:
+  level: "debug"
+  output: "logs/server.log"
