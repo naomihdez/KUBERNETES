@@ -1,12 +1,7 @@
 name: CI - Unit Test
 
 on:
-  workflow_dispatch
-    branches:
-      - main
-  pull_request:
-    branches:
-      - main
+  workflow_dispatch: {}
 
 jobs:
   build:
@@ -28,10 +23,17 @@ jobs:
         run: dotnet build ./netcore/ExploringSoft/ExploringSoft.sln --configuration Release --no-restore
 
       - name: Run unit tests with report
-        run: dotnet test ./netcore/ExploringSoft/TestExploringSoftApi/TestExploringSoftApi.csproj --configuration Release --no-build --logger "trx;LogFileName=TestResults.trx"
-        
+        run: |
+          mkdir -p TestResults
+          dotnet test ./netcore/ExploringSoft/TestExploringSoftApi/TestExploringSoftApi.csproj \
+            --configuration Release \
+            --no-build \
+            --logger "trx;LogFileName=TestResults.trx" \
+            --results-directory TestResults
+
       - name: Upload test results
         uses: actions/upload-artifact@v4
         with:
           name: TestResults
-          path: ./netcore/ExploringSoft/TestExploringSoftApi/TestResults/TestResults.trx
+          path: TestResults/TestResults.trx
+
