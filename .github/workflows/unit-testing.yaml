@@ -17,15 +17,15 @@ jobs:
           dotnet-version: '8.x'
 
       - name: Restore dependencies
-        run: dotnet restore ./netcore/ExploringSoft/ExploringSoft.sln
+        run: dotnet restore ./Net/ExploringActions/ExploringActions.sln
 
       - name: Build the solution
-        run: dotnet build ./netcore/ExploringSoft/ExploringSoft.sln --configuration Release --no-restore
+        run: dotnet build ./Net/ExploringActions/ExploringActions.sln --configuration Release --no-restore
 
       - name: Run unit tests with report
         run: |
           mkdir -p TestResults
-          dotnet test ./netcore/ExploringSoft/TestExploringSoftApi/TestExploringSoftApi.csproj \
+          dotnet test ./Net/ExploringActions/TestExploringActions/TestExploringActions.csproj \
             --configuration Release \
             --no-build \
             --logger "trx;LogFileName=TestResults.trx" \
