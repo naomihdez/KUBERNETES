@@ -25,3 +25,4 @@ database:
 logging:
   level: "debug"
   output: "logs/server.log"
+#aa
