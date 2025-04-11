@@ -10,7 +10,15 @@ spec:
   containers:
   - image: nginx
     name: podyaml 
+    volumeMounts:
+      - mountPath: "/scratch"
+        name: my-volume  
     resources: {}
+  volumes:
+    - name: my-volume
+      emptyDir:
+        sizeLimit: 50Mi
+  dnsPolicy: ClusterFirst    
   dnsPolicy: ClusterFirst
   restartPolicy: Always
 status: {}
