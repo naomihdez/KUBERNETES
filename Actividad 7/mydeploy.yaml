@@ -3,22 +3,22 @@ kind: Deployment
 metadata:
   creationTimestamp: null
   labels:
-    app: mydeploy
-  name: mydeploy
+    app: naodeplo
+  name: naodeplo
 spec:
   replicas: 5
   selector:
     matchLabels:
-      app: mydeploy
+      app: naodeplo
   strategy: {}
   template:
     metadata:
       creationTimestamp: null
       labels:
-        app: mydeploy
+        app: naodeplo
     spec:
       containers:
-      - image: nginx
+      - image: nginx:mainline-perl
         name: nginx
         resources: {}
 status: {}
