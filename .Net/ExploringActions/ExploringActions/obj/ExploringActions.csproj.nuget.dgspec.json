@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\nao_n\\Desktop\\ExploringActions\\ExploringActions\\ExploringActions.csproj": {}
+    "C:\\KUBERNETES\\.Net\\ExploringActions\\ExploringActions\\ExploringActions.csproj": {}
   },
   "projects": {
-    "C:\\Users\\nao_n\\Desktop\\ExploringActions\\ExploringActions\\ExploringActions.csproj": {
+    "C:\\KUBERNETES\\.Net\\ExploringActions\\ExploringActions\\ExploringActions.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\nao_n\\Desktop\\ExploringActions\\ExploringActions\\ExploringActions.csproj",
+        "projectUniqueName": "C:\\KUBERNETES\\.Net\\ExploringActions\\ExploringActions\\ExploringActions.csproj",
         "projectName": "ExploringActions",
-        "projectPath": "C:\\Users\\nao_n\\Desktop\\ExploringActions\\ExploringActions\\ExploringActions.csproj",
+        "projectPath": "C:\\KUBERNETES\\.Net\\ExploringActions\\ExploringActions\\ExploringActions.csproj",
         "packagesPath": "C:\\Users\\nao_n\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\nao_n\\Desktop\\ExploringActions\\ExploringActions\\obj\\",
+        "outputPath": "C:\\KUBERNETES\\.Net\\ExploringActions\\ExploringActions\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

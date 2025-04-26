@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ZYVoEq5VjOnjombcpxQRtRldhu+ahGXOhc8LBjnO6DgGFGam+cBSv9AsQHrkWexnki5H//LesKArjUUJBJyryA==",
+  "dgSpecHash": "fHQQHgPfZTD9NM8qbFprGfM8Mqar79DcCq9z2UQLw07w1TjS4MmctBLO67ges2X2xctCJDE3C5APN9ajUa9uHw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\nao_n\\Desktop\\ExploringActions\\ExploringActions\\ExploringActions.csproj",
+  "projectFilePath": "C:\\KUBERNETES\\.Net\\ExploringActions\\ExploringActions\\ExploringActions.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
